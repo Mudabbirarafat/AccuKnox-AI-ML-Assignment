@@ -1,0 +1,78 @@
+# AccuKnox AI/ML Assignment – Theory Responses
+**Name:** Mohd Mudabbir Arafat
+
+---
+
+#1. SELF-RATING
+
+- Large Language Models (LLM): - B
+
+  I can work with LLM-based systems under guidance, integrate APIs, and understand prompt engineering concepts, but I am still developing deeper expertise in fine-tuning and optimization.
+
+- Deep Learning: - B  
+  I have hands-on experience with neural network concepts and common architectures, but I usually work with existing frameworks and models rather than designing complex architectures independently.
+
+- Artificial Intelligence: - A  
+  I am comfortable implementing AI-based solutions, understanding problem formulation, and selecting appropriate techniques for real-world use cases.
+
+- Machine Learning: - A  
+  I can independently build machine learning pipelines including data preprocessing, model training, evaluation, and basic optimization.
+
+---
+
+#2. High-Level Architecture of an LLM-Based Chatbot
+
+A modern LLM-based chatbot typically consists of multiple components working together:
+
+1. User Interface (UI):
+   The frontend through which users interact with the chatbot (web or mobile interface).
+
+2. Backend Service / API Layer:
+   Acts as the controller that receives user input, handles authentication, rate limiting, and forwards requests to downstream components.
+
+3. Prompt & Context Management Layer:
+   Responsible for structuring user input, system instructions, and contextual information before sending it to the LLM.
+
+4. Embedding Model:
+   Converts user queries and stored documents into vector representations.
+
+5. Vector Database:
+   Stores embeddings and performs similarity search to retrieve relevant context for a given query.
+
+6. LLM Engine:
+   The core language model that generates responses based on the prompt and retrieved context.
+
+7. Monitoring & Logging:
+   Tracks performance, errors, and user interactions for debugging and improvement.
+
+Overall Flow: 
+User input → embedding generation → vector search → context retrieval → prompt construction → LLM response → user output.
+
+---
+
+#3. Vector Databases
+
+Vector databases are specialized databases designed to store and search high-dimensional vectors efficiently. They are commonly used in applications involving semantic search, recommendation systems, and retrieval-augmented generation (RAG).
+
+# Hypothetical Use Case
+**Problem:** A legal document question-answering system where users ask questions based on large volumes of legal texts.
+
+### Why a Vector Database is Needed
+- Legal documents are lengthy and unstructured.
+- Keyword search is insufficient for semantic understanding.
+- Vector similarity enables retrieval of contextually relevant clauses.
+
+### Choice of Vector Database: FAISS
+I would choose **FAISS** for this use case because:
+- It is open-source and widely adopted.
+- Offers fast similarity search for large embedding collections.
+- Suitable for on-premise deployments, which is important for sensitive legal data.
+- Integrates well with Python-based ML pipelines.
+
+---
+
+## Assumptions
+
+- Public mock APIs are used where domain-specific APIs are unavailable.
+- Synthetic values are generated where required to demonstrate data processing and visualization.
+- The focus of the assignment is on system design, correctness, and explainability rather than production deployment.
